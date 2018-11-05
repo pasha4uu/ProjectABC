@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RegistrationView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationView" title="RegistrationView" id="BYZ-38-t0r" customClass="RegistrationView" customModule="ReatchallProjectABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup Vendor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-76-VYX">
+                                <rect key="frame" x="15" y="50" width="290" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h0-W3-woe">
+                                <rect key="frame" x="15" y="94.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-Cz-CTH">
+                                <rect key="frame" x="15" y="134.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gender" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmz-rm-sy8">
+                                <rect key="frame" x="15" y="174.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnb-lp-kdU">
+                                <rect key="frame" x="15" y="214.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mobile" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRO-8P-dk6">
+                                <rect key="frame" x="15" y="254.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DOB" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-Bb-Nvz">
+                                <rect key="frame" x="15" y="294.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p9-td-YMp">
+                                <rect key="frame" x="100" y="374.5" width="120" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="19"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbD-2t-hdn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwE-0q-Qwd">
+                                <rect key="frame" x="50" y="420.5" width="220" height="36"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="19"/>
+                                <state key="normal" title="already member login">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQ9-gV-1cp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2m-cb-YTu">
+                                <rect key="frame" x="16" y="334.5" width="123" height="30"/>
+                                <state key="normal" title="forgot password ?"/>
+                                <connections>
+                                    <action selector="forgotPasswordTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfq-WV-YDN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1G-76-VYX" secondAttribute="trailing" constant="15" id="2vI-hQ-snq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fnb-lp-kdU" secondAttribute="trailing" constant="15" id="3Wg-Be-O1I"/>
+                            <constraint firstItem="KwE-0q-Qwd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4aS-L3-Bvk"/>
+                            <constraint firstItem="fnb-lp-kdU" firstAttribute="top" secondItem="jmz-rm-sy8" secondAttribute="bottom" constant="10" id="4fL-3E-5oO"/>
+                            <constraint firstItem="KwE-0q-Qwd" firstAttribute="top" secondItem="1p9-td-YMp" secondAttribute="bottom" constant="10" id="5gk-hN-6hQ"/>
+                            <constraint firstItem="HfQ-Bb-Nvz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8Rm-tD-eWM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jmz-rm-sy8" secondAttribute="trailing" constant="15" id="9BC-N8-5tZ"/>
+                            <constraint firstItem="VWP-Cz-CTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Aok-cT-XAB"/>
+                            <constraint firstItem="jmz-rm-sy8" firstAttribute="top" secondItem="VWP-Cz-CTH" secondAttribute="bottom" constant="10" id="CMM-mU-Imt"/>
+                            <constraint firstItem="fnb-lp-kdU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Ea2-1M-HTW"/>
+                            <constraint firstItem="1p9-td-YMp" firstAttribute="top" secondItem="p2m-cb-YTu" secondAttribute="bottom" constant="10" id="GTk-CI-qlw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KwE-0q-Qwd" secondAttribute="trailing" constant="50" id="JjC-SC-8Wp"/>
+                            <constraint firstItem="VWP-Cz-CTH" firstAttribute="top" secondItem="6h0-W3-woe" secondAttribute="bottom" constant="10" id="RxN-mC-Hfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6h0-W3-woe" secondAttribute="trailing" constant="15" id="SDA-AG-u1n"/>
+                            <constraint firstItem="1p9-td-YMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="SgX-yz-ASd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VWP-Cz-CTH" secondAttribute="trailing" constant="15" id="TCa-o3-tI9"/>
+                            <constraint firstItem="6h0-W3-woe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UBi-Pk-abw"/>
+                            <constraint firstItem="p2m-cb-YTu" firstAttribute="top" secondItem="HfQ-Bb-Nvz" secondAttribute="bottom" constant="10" id="UCd-Yj-y53"/>
+                            <constraint firstItem="p2m-cb-YTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wfb-eB-Ox3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRO-8P-dk6" secondAttribute="trailing" constant="15" id="b2V-De-yv6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p2m-cb-YTu" secondAttribute="trailing" constant="181" id="bNN-IO-osm"/>
+                            <constraint firstItem="z1G-76-VYX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bqE-kp-4j5"/>
+                            <constraint firstItem="HRO-8P-dk6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="heJ-yN-f38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1p9-td-YMp" secondAttribute="trailing" constant="100" id="nnA-sL-CON"/>
+                            <constraint firstItem="HfQ-Bb-Nvz" firstAttribute="top" secondItem="HRO-8P-dk6" secondAttribute="bottom" constant="10" id="qJg-Uq-KNe"/>
+                            <constraint firstItem="HRO-8P-dk6" firstAttribute="top" secondItem="fnb-lp-kdU" secondAttribute="bottom" constant="10" id="uwn-2C-bBx"/>
+                            <constraint firstItem="6h0-W3-woe" firstAttribute="top" secondItem="z1G-76-VYX" secondAttribute="bottom" constant="20" id="wjX-sr-vGE"/>
+                            <constraint firstItem="z1G-76-VYX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="yMC-hv-TJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HfQ-Bb-Nvz" secondAttribute="trailing" constant="15" id="zOZ-iP-Ya3"/>
+                            <constraint firstItem="jmz-rm-sy8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zlK-wo-0OA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="DOBTF" destination="HfQ-Bb-Nvz" id="hfj-z7-fGZ"/>
+                        <outlet property="emailTF" destination="VWP-Cz-CTH" id="52R-nC-5Nm"/>
+                        <outlet property="genderTF" destination="jmz-rm-sy8" id="keH-AD-Mob"/>
+                        <outlet property="mobileTF" destination="HRO-8P-dk6" id="YZy-HE-Eei"/>
+                        <outlet property="nameTF" destination="6h0-W3-woe" id="8Kr-2V-VfM"/>
+                        <outlet property="passwordTF" destination="fnb-lp-kdU" id="f5p-9z-GBk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="45" y="83.75"/>
         </scene>
     </scenes>
 </document>
